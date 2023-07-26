@@ -61,21 +61,21 @@ const App = () => {
   }
 
   const goodReviews = () => {
-    console.log('good reviews, value before', good)
+    // console.log('good reviews, value before', good)
     const updatedGood = good + 1
     setGood(updatedGood)
     setTotal(updatedGood + neutral + bad)
   }
 
   const badReviews = () => {
-    console.log('bad reviews, value before', bad)
+    // console.log('bad reviews, value before', bad)
     const updatedBad = bad + 1
     setBad(updatedBad)
     setTotal(good + neutral + updatedBad)
   }
 
   const neutralReviews = () => {
-    console.log('neutral reviews, value before', neutral)
+    // console.log('neutral reviews, value before', neutral)
     const updatedNeutral = neutral + 1
     setNeutral(updatedNeutral)
     setTotal(good + updatedNeutral + bad)
