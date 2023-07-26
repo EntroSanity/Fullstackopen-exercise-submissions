@@ -52,7 +52,7 @@ const App = () => {
     const copy = [...votes]
     copy[selected] += 1
     setVotes(copy)
-    console.log("Votes", votes)
+    console.log("Votes count", votes)
   }
 
   const mostVotesIndex = votes.indexOf(Math.max(...votes));
